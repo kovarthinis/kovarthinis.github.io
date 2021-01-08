@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Resume</title>
+    <script>
+        function showDateTime() {
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (("0" + dt.getDate()).slice(-2)) + "." + (("0" + (dt.getMonth() + 1)).slice(-2)) + "." + (dt.getFullYear()) + " " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + ":" + (("0" + dt.getSeconds()).slice(-2));
+            var refresh = 1000;
+            mytime = setTimeout('showDateTime()', refresh)
+        }
+
+    </script>
+
+
+<style>
+    table {
+        border-collapse: collapse;
+        border: 1px solid black;
+        width:100%;
+    }
+
+    th,
+    td {
+        column-width: 20%;
+        padding: 5px;
+        padding-left: 5px;
+        padding-bottom:3px;
+        font-size:16px;
+        text-align:center;
+    }
+
+    tr:nth-child(even) {
+        background-color: powderblue;
+    }
+    .avatar {
+        vertical-align: middle;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+</style>
+
+
+</head>
+
+<body onload="showDateTime()">
+
+    <div style="text-align: center; font-family:courier,arial,helvetica;">
+        <img src="../basic resume/ko.jpg" alt="Avatar" class="avatar" />
+        <h1>Kovarthini Shanmugam</h1>
+        <h5>
+            <a href="mailto:kovarthinimalar@gmail.com">
+                kovarthinimalar@gmail.com
+            </a>
+        </h5>
+        <h5>Mobile:+916381966475</h5>
+    </div>
+    <hr />
+    <h2 style="background-color:powderblue; font-size:25;">Objective</h2>
+    <p>Looking for a competitive and challenging job that will
+        utilize my technical skills to meet business
+        requirements.</p>
+    <hr />
+    <h2 style="background-color:powderblue; font-size:25;">Work Experience</h2>
+    <h3>Software Trainee at Persistent Systems Pvt. Ltd</h3>
+<li>Developing Kesar – Expense Tracker Mobile
+  Application</li>
+<li>Working on Ionic 5, Angular, TypeScript for Mobile
+  Application</li>
+<li>Built website using HTML5, Bootstrap CSS, JavaScrip</li>
+<li>JavaScript</li>
+<li>Internationalization and Responsible for manual
+  testing of Website and Mobile Application.</li>
+
+<hr/>
+    <h2 style="background-color:powderblue; font-size:25;">Skills</h2>
+    <ul>
+        <li>Java</li>
+        <li>Ionic</li>
+        <li>Mysql</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <hr />
+    <h2>
+        <p style="background-color:powderblue; font-size:25;">Education</p>
+    </h2>
+    <table id="myTable" border="1">
+        <tr>
+            <th style="column-width: 20%;text-align:center">Course</th>
+            <th style="column-width: 20%;text-align:center">Institution</th>
+            <th style="column-width: 20%;text-align:center">Year of passing</th>
+            <th style="column-width: 20%;text-align:center">Percentage(%)</th>
+        </tr>
+        <tr style="font-size:16">
+            <td>MCA</td>
+            <td>Gnamani College of Technology</td>
+            <td style="text-align:center">2017</td>
+            <td style="text-align:center">80</td>
+        </tr>
+        <tr>
+            <td>BCA</td>
+            <td>Selvamm Arts and Science College</td>
+            <td style="text-align:center">2015</td>
+            <td style="text-align:center">70</td>
+        </tr>
+        <tr>
+            <td>HSC</td>
+            <td>Govt.Hr.Sec.School</td>
+            <td style="text-align:center">2012</td>
+            <td style="text-align:center">58.5</td>
+        </tr>
+        <tr>
+            <td>SSLC</td>
+            <td>Govt.Hr.Sec.School</td>
+            <td style="text-align:center">2010</td>
+            <td style="text-align:center">81</td>
+        </tr>
+    </table>    <hr/>
+   
+<h2 style="background-color:powderblue; font-size:25;">Achievements</h2>
+<ul>
+    <li>Participated National Level Symposium and Conferences.</li>
+    <li>Participated National Creativity Apptitude Test.</li>
+    <li>Presenting a paper Big Data and Cloud Computing.</li>
+    <li>Conducting Qiuz Events.</li>
+   
+</ul>
+<hr/>
+
+<h2 style="background-color:powderblue; font-size:25;">Hobbies</h2>
+<ul>
+    <li>Reading Books</li>
+    <li>Playing Carrom</li>
+    <li>Hearing Music</li>
+    <li>Connect with social media</li>
+</ul>
+
+<hr/>
+
+    <h2 style="background-color:powderblue; font-size:25;">Languages known</h2>
+    <ul>
+        <li>English</li>
+        <li>Tamil</li>
+    </ul>
+   
+    <hr/>
+    <h2 style="background-color:powderblue; font-size:25;">Declaration</h2>
+    <p>I solemnly declare that all the information furnished in this document is free of errors to the best of my knowledge.</p>
+    <h3>
+    <p style="text-align: right;">Your's Faithfully,</p>
+    </h3>
+    <p style="text-align: right;">Kovarthini Shanmugam</p>
+    <p style="text-align: right;"><b>Place:</b> Kalangani</p>
+    <p style="text-align: right;">
+        <b>Date:</b>
+        <span id="datetime">dd-mm-yyyy></span>
+    </p>
+</body>
+
+</html>
